@@ -8,8 +8,16 @@
 </head>
 
 <body>
-    <h1>Hello everyone!! from html</h1>
+    <div id="root">
+    </div>
+    <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello everyone from javascript!";
 
+        const root = document.getElementById("root");
+
+        root.appendChild(heading);
+    </script>
 </body>
 
 </html>
